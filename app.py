@@ -15,15 +15,21 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/dcdha/OneDrive/Desktop/Final/Saved Models/diabetes_model.sav', 'rb'))
+# getting the working directory of the main.py
+working_dir = os.path.dirname(os.path.abspath(__file__))
 
-heart_disease_model = pickle.load(open('C:/Users/dcdha/OneDrive/Desktop/Final/Saved Models/heartdisease_model.sav', 'rb'))
+# loading the saved models
 
-lung_cancer_model=pickle.load(open('C:/Users/dcdha/OneDrive/Desktop/Final/Saved Models/lung_cancer_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-hepatitis_model=pickle.load(open('C:/Users/dcdha/OneDrive/Desktop/Final/Saved Models/hepatitis_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heartdisease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/dcdha/OneDrive/Desktop/Final/Saved Models/parkinsons_model.sav', 'rb'))
+lung_cancer_model=pickle.load(open('lung_cancer_model.sav', 'rb'))
+
+hepatitis_model=pickle.load(open('hepatitis_model.sav', 'rb'))
+
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+
 
 # sidebar for navigation
 with st.sidebar: 
